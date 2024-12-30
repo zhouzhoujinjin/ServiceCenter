@@ -1,0 +1,31 @@
+.root {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: var(--mantine-spacing-xs);
+}
+.viewport {
+  display: flex;
+  align-items: center;
+}
+.atStart::before {
+  content: " ";
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100px;
+  z-index: 10;
+  box-shadow:0.0625rem 0 0.1875rem rgba(0, 0, 0, 0.05) inset, rgba(0, 0, 0, 0.05) 0.625rem 0 0.9375rem -0.3125rem inset, rgba(0, 0, 0, 0.04) 0.4375rem 0 0.4375rem -0.3125rem inset; 
+}
+.atEnd::after {
+  content: " ";
+  position: absolute;
+  pointer-events: none;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100px;
+  z-index: 10;
+  box-shadow: -0.0625rem 0 0.1875rem rgba(0, 0, 0, 0.05) inset, rgba(0, 0, 0, 0.05) -0.625rem 0 0.9375rem -0.3125rem inset, rgba(0, 0, 0, 0.04) -0.4375rem 0 0.4375rem -0.3125rem inset;
+}

@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PureCode.Core.TreeFeature\PureCode.Core.TreeFeature.csproj" />
+    <ProjectReference Include="..\PureCode.Core.UserFeature\PureCode.Core.UserFeature.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PureCode.AdminCommands": {
+      "commandName": "Project",
+      "commandLineArgs": "createAdmin --name slobber --password 123456"
+    }
+  }
+}

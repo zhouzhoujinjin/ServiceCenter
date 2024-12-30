@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Version>6.5.1</Version>
+    <Description>新版 PureCode 底层框架，多租户库</Description>
+    <Copyright>PureCode</Copyright>
+  </PropertyGroup>
+
+</Project>

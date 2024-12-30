@@ -1,0 +1,9 @@
+.imageIcon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.active {
+  background-color: var(--mantine-primary-color-light);
+  color: var(--mantine-primary-color-light-color);
+}

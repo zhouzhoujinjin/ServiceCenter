@@ -1,0 +1,8 @@
+.mainContent {
+  padding: var(--mantine-spacing-md);
+  flex: 1;
+  height: 100%;
+  max-width: calc(100vw - 240px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}

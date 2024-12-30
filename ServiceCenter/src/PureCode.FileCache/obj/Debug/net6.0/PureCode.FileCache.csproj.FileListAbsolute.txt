@@ -1,0 +1,12 @@
+D:\Projects\dongpo\ServiceCenter\ServiceCenter\src\PureCode.FileCache\bin\Debug\net6.0\PureCode.FileCache.deps.json
+D:\Projects\dongpo\ServiceCenter\ServiceCenter\src\PureCode.FileCache\bin\Debug\net6.0\PureCode.FileCache.dll
+D:\Projects\dongpo\ServiceCenter\ServiceCenter\src\PureCode.FileCache\bin\Debug\net6.0\PureCode.FileCache.pdb
+D:\Projects\dongpo\ServiceCenter\ServiceCenter\src\PureCode.FileCache\obj\Debug\net6.0\PureCode.FileCache.csproj.AssemblyReference.cache
+D:\Projects\dongpo\ServiceCenter\ServiceCenter\src\PureCode.FileCache\obj\Debug\net6.0\PureCode.FileCache.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\dongpo\ServiceCenter\ServiceCenter\src\PureCode.FileCache\obj\Debug\net6.0\PureCode.FileCache.AssemblyInfoInputs.cache
+D:\Projects\dongpo\ServiceCenter\ServiceCenter\src\PureCode.FileCache\obj\Debug\net6.0\PureCode.FileCache.AssemblyInfo.cs
+D:\Projects\dongpo\ServiceCenter\ServiceCenter\src\PureCode.FileCache\obj\Debug\net6.0\PureCode.FileCache.csproj.CoreCompileInputs.cache
+D:\Projects\dongpo\ServiceCenter\ServiceCenter\src\PureCode.FileCache\obj\Debug\net6.0\PureCode.FileCache.dll
+D:\Projects\dongpo\ServiceCenter\ServiceCenter\src\PureCode.FileCache\obj\Debug\net6.0\refint\PureCode.FileCache.dll
+D:\Projects\dongpo\ServiceCenter\ServiceCenter\src\PureCode.FileCache\obj\Debug\net6.0\PureCode.FileCache.pdb
+D:\Projects\dongpo\ServiceCenter\ServiceCenter\src\PureCode.FileCache\obj\Debug\net6.0\ref\PureCode.FileCache.dll

@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Entities\**" />
+	  <EmbeddedResource Remove="Entities\**" />
+	  <None Remove="Entities\**" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="8.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+		<PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="7.2.0" />
+		<PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.0-beta.2" />
+		<PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Json.Microsoft" Version="8.0.0-beta.2" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\PureCode.Core.Kernel\PureCode.Core.Kernel.csproj" />
+		<ProjectReference Include="..\PureCode.Core.SettingFeature\PureCode.Core.SettingFeature.csproj" />
+		<ProjectReference Include="..\PureCode.Core.ValueSpaceFeature\PureCode.Core.ValueSpaceFeature.csproj" />
+		<ProjectReference Include="..\PureCode.Utils\PureCode.Utils.csproj" />
+	</ItemGroup>
+
+</Project>

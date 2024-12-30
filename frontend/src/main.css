@@ -1,0 +1,15 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--_input-bg) inset !important;
+}
+
+.mantine-Notification-root::before {
+  width: calc(0.5rem * var(--mantine-scale)) !important;
+}

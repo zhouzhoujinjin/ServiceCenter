@@ -1,0 +1,1524 @@
+[
+  {
+    "ContainingType": "PureCode.Core.Controllers.AccountController",
+    "Method": "UploadAvatar",
+    "RelativePath": "api/account/avatar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "avatar",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237 - \u66F4\u65B0\u5934\u50CF"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.AccountController",
+    "Method": "GenerateCaptcha",
+    "RelativePath": "api/account/captcha",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[PureCode.Core.UserFeature.Models.CaptchaModel, PureCode.Core.UserFeature, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u83B7\u53D6\u9A8C\u8BC1\u7801"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.AccountController",
+    "Method": "LoginAsync",
+    "RelativePath": "api/account/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "PureCode.Core.Models.LoginUserModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[PureCode.Core.Models.AuthenticationTokens, PureCode.Core.UserFeature, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237 - \u5BC6\u7801\u767B\u5F55"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.MenuController",
+    "Method": "GetMainMenu",
+    "RelativePath": "api/account/nav",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.Collections.Generic.ICollection\u00601[[PureCode.Core.Models.MenuItemModel, PureCode.Core.MenuFeature, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237 - \u5BFC\u822A\u83DC\u5355"
+  },
+  {
+    "ContainingType": "Internal.Controllers.AccountController",
+    "Method": "LoginByOAuth",
+    "RelativePath": "api/account/oauth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "OAuth \u767B\u5F55"
+  },
+  {
+    "ContainingType": "Internal.Controllers.AccountController",
+    "Method": "OAuthCallback",
+    "RelativePath": "api/account/oauth-callback",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "OAuth \u56DE\u8C03"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.AccountController",
+    "Method": "UpdatePasswordAsync",
+    "RelativePath": "api/account/password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "passwords",
+        "Type": "PureCode.Core.Models.ChangePasswordModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237 - \u66F4\u65B0\u5BC6\u7801"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.AccountController",
+    "Method": "GetPermissionsAsync",
+    "RelativePath": "api/account/permissions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237 - \u6743\u9650\u5217\u8868"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.AccountController",
+    "Method": "GetProfileAsync",
+    "RelativePath": "api/account/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[PureCode.Core.Models.UserModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237 - \u7528\u6237\u8D44\u6599"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.AccountController",
+    "Method": "UpdateProfileAsync",
+    "RelativePath": "api/account/profile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "profiles",
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable\u00601[[System.Text.Json.JsonElement, System.Text.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[PureCode.Core.Models.UserModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237 - \u66F4\u65B0\u8D44\u6599"
+  },
+  {
+    "ContainingType": "Internal.Controllers.ConfigController",
+    "Method": "Save",
+    "RelativePath": "api/admin/config/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "config",
+        "Type": "Internal.Models.SystemConfigModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u66F4\u65B0\u7CFB\u7EDF\u8BBE\u7F6E"
+  },
+  {
+    "ContainingType": "PureCode.Core.DepartmentFeature.DepartmentController",
+    "Method": "TreeAsync",
+    "RelativePath": "api/admin/departments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.Collections.Generic.ICollection\u00601[[PureCode.Core.DepartmentFeature.DepartmentModel, PureCode.Core.DepartmentFeature, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u90E8\u95E8\u6811"
+  },
+  {
+    "ContainingType": "PureCode.Core.DepartmentFeature.DepartmentController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/admin/departments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "department",
+        "Type": "PureCode.Core.DepartmentFeature.DepartmentModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u521B\u5EFA\u90E8\u95E8"
+  },
+  {
+    "ContainingType": "PureCode.Core.DepartmentFeature.DepartmentController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/admin/departments/{departmentId}/parent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmentId",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      },
+      {
+        "Name": "parentDepartmentId",
+        "Type": "System.Nullable\u00601[[System.UInt64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u66F4\u65B0\u90E8\u95E8\u7ED3\u6784"
+  },
+  {
+    "ContainingType": "PureCode.Core.DepartmentFeature.DepartmentController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/admin/departments/{departmentId}/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmentId",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      },
+      {
+        "Name": "department",
+        "Type": "PureCode.Core.DepartmentFeature.DepartmentModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u66F4\u65B0\u90E8\u95E8\u53CA\u90E8\u95E8\u4EBA\u5458\u4FE1\u606F"
+  },
+  {
+    "ContainingType": "PureCode.Core.DepartmentFeature.DepartmentController",
+    "Method": "DepartmentUsersAsync",
+    "RelativePath": "api/admin/departments/{depId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "depId",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[PureCode.Core.DepartmentFeature.DepartmentModel, PureCode.Core.DepartmentFeature, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u90E8\u95E8\u7528\u6237\u5217\u8868"
+  },
+  {
+    "ContainingType": "PureCode.Core.DepartmentFeature.DepartmentController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/admin/departments/{deptId}/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deptId",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u7AEF - \u5220\u9664\u90E8\u95E8"
+  },
+  {
+    "ContainingType": "PureCode.Core.DepartmentFeature.DepartmentController",
+    "Method": "UserDepartmentsAsync",
+    "RelativePath": "api/admin/departments/users/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.Collections.Generic.ICollection\u00601[[PureCode.Core.DepartmentFeature.UserDepartment, PureCode.Core.DepartmentFeature, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u7528\u6237\u90E8\u95E8\u5217\u8868"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.MenuController",
+    "Method": "ListAllAsync",
+    "RelativePath": "api/admin/nav",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.Collections.Generic.ICollection\u00601[[PureCode.Core.Models.MenuItemModel, PureCode.Core.MenuFeature, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u83DC\u5355\u6811"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.MenuController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/admin/nav/{id}/parent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      },
+      {
+        "Name": "parentId",
+        "Type": "System.Nullable\u00601[[System.UInt64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u66F4\u65B0\u83DC\u5355\u9879\u4F4D\u7F6E"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.MenuController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/admin/nav/{menuId}/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "menuId",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u5220\u9664\u83DC\u5355\u9879"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.MenuController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/admin/nav/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "PureCode.Core.Models.MenuItemModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u65B0\u5EFA\u83DC\u5355\u9879"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.MenuController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/admin/nav/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "PureCode.Core.Models.MenuItemModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u66F4\u65B0\u83DC\u5355\u9879"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.MenuController",
+    "Method": "GetAllPermissions",
+    "RelativePath": "api/admin/permissions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.Collections.Generic.IEnumerable\u00601[[PureCode.Core.Models.PermissionModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u6743\u9650\u70B9\u5217\u8868"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.RoleController",
+    "Method": "IndexAsync",
+    "RelativePath": "api/admin/roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.PagedAjaxResp\u00601[[PureCode.Core.Models.RoleModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u89D2\u8272\u5217\u8868"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.RoleController",
+    "Method": "Add",
+    "RelativePath": "api/admin/roles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rwuac",
+        "Type": "PureCode.Core.Models.RoleModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u6DFB\u52A0\u89D2\u8272\u53CA\u6743\u9650"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.RoleController",
+    "Method": "GetRole",
+    "RelativePath": "api/admin/roles/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[PureCode.Core.Models.RoleModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u89D2\u8272\u8BE6\u60C5"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.RoleController",
+    "Method": "IsExistRole",
+    "RelativePath": "api/admin/roles/{name}/isExist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u5224\u65AD\u89D2\u8272\u662F\u5426\u5B58\u5728"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.RoleController",
+    "Method": "Update",
+    "RelativePath": "api/admin/roles/{name}/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "roleWithUsersAndClaims",
+        "Type": "PureCode.Core.Models.RoleModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u4FEE\u6539\u89D2\u8272"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.RoleController",
+    "Method": "GetRoleWithoutClaims",
+    "RelativePath": "api/admin/roles/{name}/withoutClaims",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[PureCode.Core.Models.RoleModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u89D2\u8272\u8BE6\u60C5-\u65E0\u6743\u9650"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.RoleController",
+    "Method": "Delete",
+    "RelativePath": "api/admin/roles/{roleName}/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u5220\u9664\u89D2\u8272"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.RoleController",
+    "Method": "UpdateRoleUsers",
+    "RelativePath": "api/admin/roles/{roleName}/users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "users",
+        "Type": "System.Collections.Generic.List\u00601[[PureCode.Core.Models.UserModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u5206\u914D\u89D2\u8272\u7528\u6237"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.UserLogController",
+    "Method": "IndexAsync",
+    "RelativePath": "api/admin/userLogs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.PagedAjaxResp\u00601[[PureCode.Core.Models.UserLogModel, PureCode.Core.UserLogFeature, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u65E5\u5FD7\u5217\u8868"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.UserController",
+    "Method": "AdminListUsersAsync",
+    "RelativePath": "api/admin/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.PagedAjaxResp\u00601[[PureCode.Core.Models.AdminUserModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u7528\u6237\u5217\u8868"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.UserController",
+    "Method": "AdminCreateUserAsync",
+    "RelativePath": "api/admin/users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "PureCode.Core.Models.UserModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[PureCode.Core.Models.UserModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u6DFB\u52A0\u7528\u6237"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.UserController",
+    "Method": "AdminUpdateAsync",
+    "RelativePath": "api/admin/users/{userName}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "user",
+        "Type": "PureCode.Core.Models.UserModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[PureCode.Core.Models.UserModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u4FEE\u6539\u7528\u6237"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.UserController",
+    "Method": "GetBaseUserAsync",
+    "RelativePath": "api/admin/users/{userName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[PureCode.Core.Models.UserModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u7528\u6237\u57FA\u7840\u4FE1\u606F"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.UserController",
+    "Method": "AdminActiveUserAsync",
+    "RelativePath": "api/admin/users/{userName}/active",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u6FC0\u6D3B\u7528\u6237"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.UserController",
+    "Method": "AdminDeleteUserAsync",
+    "RelativePath": "api/admin/users/{userName}/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u505C\u7528\u7528\u6237"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.UserController",
+    "Method": "AdminIsExistUserAsync",
+    "RelativePath": "api/admin/users/{userName}/isExist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u5224\u65AD\u7528\u6237\u662F\u5426\u5B58\u5728"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.UserController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/admin/users/{userName}/resetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u91CD\u7F6E\u5BC6\u7801"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.UserController",
+    "Method": "AdminUploadAvatar",
+    "RelativePath": "api/admin/users/avatar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "avatar",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u4E0A\u4F20\u5934\u50CF"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.UserController",
+    "Method": "AdminListDeletedUsersAsync",
+    "RelativePath": "api/admin/users/deleted",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.PagedAjaxResp\u00601[[PureCode.Core.Models.AdminUserModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u5DF2\u5220\u9664\u7528\u6237\u5217\u8868"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.UserController",
+    "Method": "AdminListInvisibleUsersAsync",
+    "RelativePath": "api/admin/users/invisible",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.PagedAjaxResp\u00601[[PureCode.Core.Models.AdminUserModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7BA1\u7406\u5458 - \u5DF2\u7981\u7528\u7528\u6237\u5217\u8868"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.ValueSpaceController",
+    "Method": "Index",
+    "RelativePath": "api/admin/valueSpaces",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.PagedAjaxResp\u00601[[PureCode.Core.Models.ValueSpaceModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u503C\u7A7A\u95F4\u6458\u8981\u5217\u8868"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.ValueSpaceController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/admin/valueSpaces/{name}/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "valueSpace",
+        "Type": "PureCode.Core.Models.ValueSpaceModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[PureCode.Core.Models.ValueSpaceModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u66F4\u65B0\u503C\u7A7A\u95F4"
+  },
+  {
+    "ContainingType": "Internal.Controllers.ConfigController",
+    "Method": "IndexAsync",
+    "RelativePath": "api/config",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[Internal.Models.SystemConfigModel, Inernal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7CFB\u7EDF\u8BBE\u7F6E"
+  },
+  {
+    "ContainingType": "PureCode.Core.DepartmentFeature.DepartmentController",
+    "Method": "ListAsync",
+    "RelativePath": "api/departments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.Collections.Generic.ICollection\u00601[[PureCode.Core.DepartmentFeature.DepartmentModel, PureCode.Core.DepartmentFeature, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237 - \u90E8\u95E8\u5217\u8868"
+  },
+  {
+    "ContainingType": "PureCode.Core.DepartmentFeature.DepartmentController",
+    "Method": "ListWithDepartment",
+    "RelativePath": "api/departments/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.Collections.Generic.ICollection\u00601[[PureCode.Core.Models.UserModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237 - \u5168\u90E8\u7528\u6237\uFF08\u90E8\u95E8\uFF09\u5217\u8868"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.RoleController",
+    "Method": "ListBriefRolesAsync",
+    "RelativePath": "api/roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.Collections.Generic.IEnumerable\u00601[[PureCode.Core.Models.RoleModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237 - \u89D2\u8272\u627C\u8981\u5217\u8868"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.ToolsController",
+    "Method": "Pinyin",
+    "RelativePath": "api/tools/pinyin/{chinese}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chinese",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u62FC\u97F3\u8F6C\u6362"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.UserController",
+    "Method": "FindUser",
+    "RelativePath": "api/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.PagedAjaxResp\u00601[[PureCode.Core.Models.UserModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237 - \u641C\u7D22\u7528\u6237"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.UserController",
+    "Method": "GetBriefUserAsync",
+    "RelativePath": "api/users/{userName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[PureCode.Core.Models.UserModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u7528\u6237 - \u7528\u6237\u627C\u8981\u4FE1\u606F"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.ValueSpaceController",
+    "Method": "Get",
+    "RelativePath": "api/valueSpaces",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[System.Collections.Generic.SortedDictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[PureCode.Core.Models.ValueSpaceModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Collections, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u503C\u7A7A\u95F4\u5B57\u5178"
+  },
+  {
+    "ContainingType": "PureCode.Core.Controllers.ValueSpaceController",
+    "Method": "Get",
+    "RelativePath": "api/valueSpaces/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PureCode.Core.AjaxResp\u00601[[PureCode.Core.Models.ValueSpaceModel, PureCode.Core.Kernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "\u503C\u7A7A\u95F4\u8BE6\u60C5"
+  },
+  {
+    "ContainingType": "Internal.Controllers.ConfigController",
+    "Method": "Index",
+    "RelativePath": "WW_verify_{code}.txt",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

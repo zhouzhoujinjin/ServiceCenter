@@ -1,0 +1,16 @@
+.root {
+  width: rem(220px);
+  padding: var(--mantine-spacing-sm) 0;
+  height: 100%;
+  background-color: light-dark(
+    var(--mantine-color-gray-0),
+    var(--mantine-color-dark-6)
+  );
+  box-shadow: var(--mantine-shadow-md);
+  &.collapsed {
+    width: calc(
+      var(--mantine-spacing-md) + var(--mantine-spacing-xs) + 1.75rem *
+        var(--mantine-scale)
+    );
+  }
+}

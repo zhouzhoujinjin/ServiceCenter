@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="7.5.2" />
+    <PackageReference Include="itext7.pdfhtml" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceCenter\src\PureCode.Core.DepartmentFeature\PureCode.Core.DepartmentFeature.csproj" />
+    <ProjectReference Include="..\ServiceCenter\src\PureCode.Core.Kernel\PureCode.Core.Kernel.csproj" />
+    <ProjectReference Include="..\ServiceCenter\src\PureCode.Core.UserFeature\PureCode.Core.UserFeature.csproj" />
+    <ProjectReference Include="..\ServiceCenter\src\PureCode.Utils\PureCode.Utils.csproj" />
+  </ItemGroup>
+
+</Project>

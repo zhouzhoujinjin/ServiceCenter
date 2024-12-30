@@ -1,0 +1,129 @@
+.treeItemRoot {
+  list-style: none;
+  box-sizing: border-box;
+  padding-left: var(--spacing);
+  margin-bottom: -1px;
+  width: 100%;
+  font-size: var(--mantine-font-size-sm);
+
+  &.clone {
+    display: inline-block;
+    pointer-events: none;
+    padding: 0;
+    padding-left: 10px;
+    padding-top: 5px;
+
+    .treeItem {
+      --vertical-padding: 5px;
+
+      padding-right: 24px;
+      border-radius: 4px;
+      box-shadow: 0px 15px 15px 0 rgba(34, 33, 81, 0.1);
+    }
+  }
+
+  &.ghost {
+    &.indicator {
+      opacity: 1;
+      position: relative;
+      z-index: 1;
+      margin-bottom: -1px;
+
+      .treeItem {
+        position: relative;
+        padding: 0;
+        height: 2px;
+        border-color: var(--mantine-primary-color-filled);
+        background-color: var(--mantine-primary-color-filled);
+
+        &:before {
+          position: absolute;
+          left: -8px;
+          top: -5px;
+          display: block;
+          content: "";
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          border: 1px solid var(--mantine-primary-color-filled);
+          background-color: #ffffff;
+          z-index: 2;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          border: 1px dashed var(--mantine-primary-color-4);
+          width: calc(var(--spacing) + var(--mantine-font-size-sm));
+          left: calc(var(--spacing) * -1 - var(--mantine-font-size-sm));
+          top: 0;
+          z-index: 1;
+        }
+
+        > * {
+          /* Items are hidden using height and opacity to retain focus */
+          opacity: 0;
+          height: 0;
+        }
+      }
+    }
+
+    &:not(.indicator) {
+      opacity: 0.5;
+    }
+
+    .treeItem > * {
+      box-shadow: none;
+      background-color: transparent;
+    }
+  }
+}
+
+.treeItem {
+  display: flex;
+  align-items: center;
+  border-radius: var(--mantine-radius-md);
+  border: rem(1px) solid
+    light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
+  padding: var(--mantine-spacing-sm) var(--mantine-spacing-xs);
+  padding-left: calc(var(--mantine-spacing-xl) - var(--mantine-spacing-md));
+  background-color: light-dark(
+    var(--mantine-color-white),
+    var(--mantine-color-dark-7)
+  );
+  column-gap: var(--mantine-spacing-xs);
+  margin-bottom: var(--mantine-spacing-xs);
+}
+
+.treeItemContent {
+  flex-grow: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.disableInteraction {
+  pointer-events: none;
+}
+
+.disableSelection,
+.clone {
+  .treeItemContent {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+.dragHandle {
+  color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-dark-1));
+  cursor: grab;
+}
+.collapseHandle {
+  color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-dark-1));
+}
+.treeItemActive {
+  background-color: light-dark(
+    var(--mantine-primary-color-4),
+    var(--mantine-primary-color-7)
+  );
+}

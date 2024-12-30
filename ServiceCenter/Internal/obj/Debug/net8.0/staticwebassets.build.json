@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "vL3N55CIq0iV8Qj845Cne+1QZ5NrPMFpRC53J/Ed+uA=",
+  "Source": "Inernal",
+  "BasePath": "_content/Inernal",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Inernal\\wwwroot",
+      "Source": "Inernal",
+      "ContentRoot": "D:\\Projects\\dongpo\\ServiceCenter\\ServiceCenter\\Internal\\wwwroot\\",
+      "BasePath": "_content/Inernal",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}
