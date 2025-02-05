@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "PureCode.DataTransfer": {
-      "commandName": "Project",
-      "nativeDebugging": false
-    }
-  }
-}
