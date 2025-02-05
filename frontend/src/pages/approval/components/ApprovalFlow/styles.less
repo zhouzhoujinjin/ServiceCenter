@@ -1,0 +1,26 @@
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  .timeline-item-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -4px;
+    min-height: 36px;
+  }
+  .timeline-item-content {
+    display: flex;
+    flex-direction: row;
+    .ant-scroll-number-custom-component {
+      width: 16px;
+      height: 16px;
+    }
+    > .ant-badge {
+      margin-right: 20px;
+      text-align: center;
+      .avatar-field-name {
+        margin-top: 4px;
+      }
+    }
+  }
+}

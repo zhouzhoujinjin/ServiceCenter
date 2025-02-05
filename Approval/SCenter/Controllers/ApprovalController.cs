@@ -12,7 +12,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
-using Microsoft.Extensions.Options;
 using SCenter.Models;
 using SCenter.Services;
 using SCenter.Utils;
@@ -926,13 +925,7 @@ namespace SCenter.Controllers
       var user = await approvalManager.GetUserDepartment(userId);
       var code = NumberUtility.CreateApprovalCode();
       var entity = await approvalManager.CreateCopyItem(itemId, userId, code);
-      //if (entity != null)
-      //{
-      //  entity.Content["creatorId"] = userId.ToString();//用于判断创建人条件
-      //  entity.Content["createDepartmentId"] = user.Profiles["departmentIds"].ToString();//用于判断创建人部门条件
-      //  var flowNodes = await flowManager.BuildFlowAsync(entity.TemplateId, entity.Content, entity.Id);
-      //  var approvalNodes = await approvalManager.CreateApprovalNodes(flowNodes, userId, entity.Id);
-      //}
+      
       var template = await templateManager.GetTemplateById(entity.TemplateId);
       return new AjaxResp<ApprovalItemModel>
       {
@@ -988,9 +981,6 @@ namespace SCenter.Controllers
       if (users.Count() == 0) return new AjaxResp { Data = false };
       return new AjaxResp { Data = users.Contains(userId) };
     }
-
-   
-   
 
     [HttpGet("{templateName}/departmentIds", Name = "审批 - 获取部门")]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
