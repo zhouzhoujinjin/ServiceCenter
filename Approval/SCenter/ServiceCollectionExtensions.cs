@@ -1,6 +1,6 @@
-﻿using Approval.Managers;
+﻿using SCenter.Managers;
 
-namespace Approval
+namespace SCenter
 {
   public static class ServiceCollectionExtensions
   {

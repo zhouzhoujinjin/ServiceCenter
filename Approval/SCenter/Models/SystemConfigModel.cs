@@ -1,6 +1,6 @@
 ﻿using CyberStone.Core.Models;
 
-namespace Approval.Models
+namespace SCenter.Models
 {
   public class SystemConfigModel : GlobalSettings
   {

@@ -1,0 +1,6 @@
+D:\Projects\dongpo\ServiceCenter\Approval\Approval.Hooks\obj\Debug\net6.0\Approval.Hooks.csproj.AssemblyReference.cache
+D:\Projects\dongpo\ServiceCenter\Approval\Approval.Hooks\obj\Debug\net6.0\Approval.Hooks.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\dongpo\ServiceCenter\Approval\Approval.Hooks\obj\Debug\net6.0\Approval.Hooks.AssemblyInfoInputs.cache
+D:\Projects\dongpo\ServiceCenter\Approval\Approval.Hooks\obj\Debug\net6.0\Approval.Hooks.AssemblyInfo.cs
+D:\Projects\dongpo\ServiceCenter\Approval\Approval.Hooks\obj\Debug\net6.0\Approval.Hooks.csproj.CoreCompileInputs.cache
+D:\Projects\dongpo\ServiceCenter\Approval\Approval.Hooks\obj\Debug\net6.0\Approval.Hooks.sourcelink.json

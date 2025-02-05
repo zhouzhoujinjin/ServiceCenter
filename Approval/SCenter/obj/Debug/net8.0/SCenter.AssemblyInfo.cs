@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SCenter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+968aa28d14975f1b081b2330e0b05a92edd0984c")]
 [assembly: System.Reflection.AssemblyProductAttribute("SCenter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SCenter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

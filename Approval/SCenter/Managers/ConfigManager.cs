@@ -1,7 +1,7 @@
-﻿using Approval.Models;
+﻿using SCenter.Models;
 using CyberStone.Core.Managers;
 
-namespace Approval.Managers
+namespace SCenter.Managers
 {
   public class ConfigManager
   {

@@ -13,7 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\slobber\CyberStone\CyberStone.Core\CyberStone.Core.csproj" />
+    <ProjectReference Include="..\..\..\..\slobber\CyberStone\CyberStone.Core\CyberStone.Core.csproj" />
+    <ProjectReference Include="..\Approval\Approval.csproj" />
   </ItemGroup>
 
 </Project>
