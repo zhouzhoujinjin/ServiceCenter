@@ -2,6 +2,7 @@ using SCenter;
 using CyberStone.Core;
 using Hangfire;
 using Microsoft.IdentityModel.Logging;
+using Approval;
 
 namespace SCenter
 {
@@ -22,8 +23,8 @@ namespace SCenter
     {
       services.AddHttpClient();
       services.AddCyberStone(Configuration);
-      services.AddApproval(Configuration);
-      
+      services.AddSCenter(Configuration);
+      services.AddApprovalServices(Configuration);
 
 
       var connection = Configuration.GetConnectionString("Default");

@@ -25,8 +25,8 @@ namespace Approval.Entities
     public bool IsFinal { get; set; }
     public bool IsCustomFlow { get; set; }
 
-    public List<string> SummaryFields { get; set; } = new List<string>();
-    public Dictionary<string, string>? JavascriptHooks { get; set; }
+    //public List<string> SummaryFields { get; set; } = new List<string>();
+    //public Dictionary<string, string>? JavascriptHooks { get; set; }
     public List<ConditionField> ConditionFields { get; set; }
     public List<long> DepartmentIds { get; set; } = new List<long>();
 

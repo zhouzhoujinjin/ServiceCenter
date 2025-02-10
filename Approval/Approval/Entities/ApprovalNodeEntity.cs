@@ -33,7 +33,7 @@ namespace Approval.Entities
 
     public DateTime LastUpdatedTime { get; set; }
 
-    public Dictionary<ApprovalActionType, List<string>>? Hooks { get; set; }
+    //public Dictionary<ApprovalActionType, List<string>>? Hooks { get; set; }
 
     public List<AttachFile> Attachments { get; set; }
 

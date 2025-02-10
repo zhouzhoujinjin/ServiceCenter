@@ -162,7 +162,7 @@ namespace SCenter.Controllers
     }
 
     [HttpGet("dept-users", Name = "审批 - 获取用户部门结构")]
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Policy = ClaimNames.ApiPermission)]
+    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Policy = ClaimNames.ApiPermission)]
     public async Task<AjaxResp> GetUsersSelect()
     {
       var result = await cache.GetAsync($"{CacheKeys.UserProfileWithDepartmentCacheKeyValue}", async () =>
@@ -758,26 +758,26 @@ namespace SCenter.Controllers
         majorNode.LastUpdatedTime = DateTime.Now;
       }
 
-      if (currentNode.Hooks != null)
-      {
-        foreach (var hooks in currentNode.Hooks)
-        {
-          if (hooks.Key == node.ActionType)
-          {
-            if (hooks.Value != null)
-            {
-              foreach (var hook in hooks.Value)
-              {
-                var formData = await approvalHooksManager.ExecuteAsync(hook, approval.Content, TemplateUtils.GetTemplateModelType(approval.Template.Name));
-                if (formData != null)
-                {
-                  approval.Content = formData;
-                }
-              }
-            }
-          }
-        }
-      }
+      //if (currentNode.Hooks != null)
+      //{
+      //  foreach (var hooks in currentNode.Hooks)
+      //  {
+      //    if (hooks.Key == node.ActionType)
+      //    {
+      //      if (hooks.Value != null)
+      //      {
+      //        foreach (var hook in hooks.Value)
+      //        {
+      //          var formData = await approvalHooksManager.ExecuteAsync(hook, approval.Content, TemplateUtils.GetTemplateModelType(approval.Template.Name));
+      //          if (formData != null)
+      //          {
+      //            approval.Content = formData;
+      //          }
+      //        }
+      //      }
+      //    }
+      //  }
+      //}
 
       await approvalManager.UpdateItem(approval, node.ActionType);
 
@@ -990,8 +990,6 @@ namespace SCenter.Controllers
       var result = await templateManager.GetDepartmentIdsAsync(userId, templateName);
       return new AjaxResp { Data = result };
     }
-
-  
 
     [HttpGet("approval-export", Name = "审批 - 导出")]
     public async Task<AjaxResp> ApprovalExport(string query = null)

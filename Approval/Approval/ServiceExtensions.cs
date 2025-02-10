@@ -10,8 +10,11 @@ namespace Approval
     public static void AddApprovalServices(this IServiceCollection services, IConfiguration configuration)
     {
       var connectionString = configuration.GetConnectionString("Default");
+      Console.WriteLine(connectionString);
       services.AddDbContext<ApprovalDbContext>(options =>
-          options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString), o => o.MigrationsAssembly("Letian")));
+          options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString),
+          o => o.MigrationsAssembly("SCenter"))
+          );
 
       services.AddScoped<ApprovalHooksManager>();
       services.AddScoped<ApprovalFlowManager>();

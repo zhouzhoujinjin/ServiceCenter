@@ -88,7 +88,7 @@ namespace Approval.Managers
 
       entity.Content = item.Content ?? entity.Content;
       var template = await context.ApprovalTemplates.Where(x => x.Id == item.TemplateId || x.Name == item.TemplateName).FirstAsync();
-      entity.Summary = string.Join(",", entity.Content.Where(x => template.SummaryFields.Contains(x.Key)).Select(x => x.Value.ToString()));
+      //entity.Summary = string.Join(",", entity.Content.Where(x => template.SummaryFields.Contains(x.Key)).Select(x => x.Value.ToString()));
       entity.Status = item.Status;
       entity.IsUpdate = item.IsUpdate;
       entity.LastUpdatedTime = DateTime.Now;
@@ -352,7 +352,7 @@ namespace Approval.Managers
           NodeType = node.NodeType,
           CreatedTime = DateTime.Now,
           PreviousNode = lastNode,
-          Hooks = node.Hooks,
+         // Hooks = node.Hooks,
           Seq = index,
           ResponseCode = ""
         };
@@ -370,7 +370,7 @@ namespace Approval.Managers
               UserId = x.UserId,
               ActionType = x.ActionType,
               NodeType = x.NodeType,
-              Hooks = x.Hooks,
+              //Hooks = x.Hooks,
               CreatedTime = DateTime.Now,
               LastUpdatedTime = DateTime.Now,
               PreviousNode = lastNode,
@@ -450,7 +450,7 @@ namespace Approval.Managers
       entity.Content = content;
 
       var template = await context.ApprovalTemplates.Where(x => x.Id == templateId).FirstOrDefaultAsync();
-      entity.Summary = string.Join(";", content.Where(x => template.SummaryFields.Contains(x.Key)).Select(x => x.Value?.ToString()));
+      //entity.Summary = string.Join(";", content.Where(x => template.SummaryFields.Contains(x.Key)).Select(x => x.Value?.ToString()));
       context.Update(entity);
       result = await context.SaveChangesAsync();
 
@@ -633,7 +633,7 @@ namespace Approval.Managers
           IsCustomFlow = item.Template.IsCustomFlow,
           Title = item.Template.Title,
           Fields = item.Template.Fields,
-          SummaryFields = item.Template.SummaryFields,
+          //SummaryFields = item.Template.SummaryFields,
           Id = item.Template.Id,
           Name = item.Template.Name
         },

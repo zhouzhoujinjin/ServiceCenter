@@ -30,8 +30,8 @@ namespace Approval.Abstracts.Models
     [JsonPropertyName("conditionFields")]
     public List<ConditionField> ConditionFields { get; set; }
 
-    [JsonPropertyName("javascriptHooks")]
-    public Dictionary<string, string> JavascriptHooks { get; set; } = new Dictionary<string, string>();
+    //[JsonPropertyName("javascriptHooks")]
+    //public Dictionary<string, string> JavascriptHooks { get; set; } = new Dictionary<string, string>();
 
     [JsonPropertyName("workflow")]
     public Workflow Workflow { get; set; }

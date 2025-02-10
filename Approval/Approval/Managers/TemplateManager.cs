@@ -139,7 +139,7 @@ namespace Approval.Managers
       var departments = await departmentManager.GetUserDepartmentsAsync(userId);
       var departmentIds = departments.Select(x => x.DepartmentId).ToList();
       var templates = await context.ApprovalTemplates.Where(x => x.Name.Equals(templateName)).Select(y => y.DepartmentIds).FirstOrDefaultAsync();
-      if (templates == null || templates.Count() == 0) return null;
+      if (templates == null || templates.Count() == 0) return departmentIds; // bug return null; 
       var intersectedList = departmentIds.Intersect(templates);
       if (intersectedList == null || intersectedList.Count() == 0) return null;
       return intersectedList;

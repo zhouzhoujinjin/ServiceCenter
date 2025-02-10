@@ -1,9 +1,3 @@
-D:\Projects\dongpo\ServiceCenter\Approval\Approval\obj\Debug\net8.0\Approval.csproj.AssemblyReference.cache
-D:\Projects\dongpo\ServiceCenter\Approval\Approval\obj\Debug\net8.0\Approval.GeneratedMSBuildEditorConfig.editorconfig
-D:\Projects\dongpo\ServiceCenter\Approval\Approval\obj\Debug\net8.0\Approval.AssemblyInfoInputs.cache
-D:\Projects\dongpo\ServiceCenter\Approval\Approval\obj\Debug\net8.0\Approval.AssemblyInfo.cs
-D:\Projects\dongpo\ServiceCenter\Approval\Approval\obj\Debug\net8.0\Approval.csproj.CoreCompileInputs.cache
-D:\Projects\dongpo\ServiceCenter\Approval\Approval\obj\Debug\net8.0\Approval.sourcelink.json
 D:\Projects\dongpo\ServiceCenter\Approval\Approval\bin\Debug\net8.0\fonts\Candara.ttf
 D:\Projects\dongpo\ServiceCenter\Approval\Approval\bin\Debug\net8.0\fonts\impact.ttf
 D:\Projects\dongpo\ServiceCenter\Approval\Approval\bin\Debug\net8.0\fonts\monbaiti.ttf
@@ -18,6 +12,12 @@ D:\Projects\dongpo\ServiceCenter\Approval\Approval\bin\Debug\net8.0\CyberStone.C
 D:\Projects\dongpo\ServiceCenter\Approval\Approval\bin\Debug\net8.0\Approval.Hooks.pdb
 D:\Projects\dongpo\ServiceCenter\Approval\Approval\bin\Debug\net8.0\ApprovalAbstract.pdb
 D:\Projects\dongpo\ServiceCenter\Approval\Approval\bin\Debug\net8.0\CyberStone.Core.pdb
+D:\Projects\dongpo\ServiceCenter\Approval\Approval\obj\Debug\net8.0\Approval.csproj.AssemblyReference.cache
+D:\Projects\dongpo\ServiceCenter\Approval\Approval\obj\Debug\net8.0\Approval.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\dongpo\ServiceCenter\Approval\Approval\obj\Debug\net8.0\Approval.AssemblyInfoInputs.cache
+D:\Projects\dongpo\ServiceCenter\Approval\Approval\obj\Debug\net8.0\Approval.AssemblyInfo.cs
+D:\Projects\dongpo\ServiceCenter\Approval\Approval\obj\Debug\net8.0\Approval.csproj.CoreCompileInputs.cache
+D:\Projects\dongpo\ServiceCenter\Approval\Approval\obj\Debug\net8.0\Approval.sourcelink.json
 D:\Projects\dongpo\ServiceCenter\Approval\Approval\obj\Debug\net8.0\Approval.csproj.Up2Date
 D:\Projects\dongpo\ServiceCenter\Approval\Approval\obj\Debug\net8.0\Approval.dll
 D:\Projects\dongpo\ServiceCenter\Approval\Approval\obj\Debug\net8.0\refint\Approval.dll

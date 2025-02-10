@@ -40,8 +40,8 @@ namespace Approval
         entity.Property(e => e.Fields).HasJsonConversion();
         entity.Property(e => e.DepartmentIds).HasJsonConversion();
         entity.Property(e => e.Group).HasConversion(new EnumToStringConverter<TemplateGroup>());
-        entity.Property(e => e.SummaryFields).HasJsonConversion();
-        entity.Property(e => e.JavascriptHooks).HasJsonConversion();
+        //entity.Property(e => e.SummaryFields).HasJsonConversion();
+        //entity.Property(e => e.JavascriptHooks).HasJsonConversion();
       });
       builder.Entity<ApprovalItemEntity>(entity =>
       {
@@ -66,7 +66,7 @@ namespace Approval
         entity.HasOne(e => e.PreviousNode).WithMany().HasPrincipalKey("Id").HasForeignKey("PreviousId")
         .OnDelete(DeleteBehavior.Restrict)
         .IsRequired(false);
-        entity.Property(e => e.Hooks).HasJsonConversion();
+        //entity.Property(e => e.Hooks).HasJsonConversion();
         entity.HasOne(e => e.NextNode).WithMany().HasPrincipalKey("Id").HasForeignKey("NextId")
         .OnDelete(DeleteBehavior.Restrict)
         .IsRequired(false);

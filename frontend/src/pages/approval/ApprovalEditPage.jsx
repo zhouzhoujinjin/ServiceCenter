@@ -60,6 +60,7 @@ const ApprovalEditPage = () => {
         setTemplateInfo(data);
       });
       GetDepartmentIds(templateName, (data) => {
+        console.log(data)
         setDepartmentIds(data);
       });
     }
@@ -72,7 +73,7 @@ const ApprovalEditPage = () => {
   }, []);
 
   useEffect(() => {
-    GetDepartments((data) => {
+    GetDepartments((data) => {      
       if (data) {
         const r = data.map((o) => ({
           id: o.profiles.departmentId,

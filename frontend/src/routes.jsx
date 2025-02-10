@@ -10,7 +10,17 @@ import {
   ValueSpacePage,
   ValueSpacesPage,
   DepartmentsPage,
-} from "./pages";
+  ApprovalEditPage,
+  ApprovalsPage,
+  ApprovalInfoPage,
+  ApprovalsWaitPage,
+  ApprovalsDisposePage,
+  ApprovalsSendPage,
+  ApprovalsAdminPage,
+  ApprovalVerifyPage,
+  ApprovalTemplatesPage,
+  ApprovalDesignPage,
+} from "./pages"
 
 
 export const COMPONENTS = {
@@ -30,8 +40,20 @@ export const COMPONENTS = {
   ValueSpaces: ValueSpacesPage,
   ValueSpace: ValueSpacePage,
 
-  
-};
+
+  //oa审批
+  ApprovalEdit: ApprovalEditPage,
+  ApprovalInfo: ApprovalInfoPage,
+  Approvals: ApprovalsPage,
+  ApprovalsWait: ApprovalsWaitPage,
+  ApprovalsDispose: ApprovalsDisposePage,
+  ApprovalsSend: ApprovalsSendPage,
+  ApprovalsAdmin: ApprovalsAdminPage,
+  ApprovalVerify: ApprovalVerifyPage,
+  ApprovalsTemplates: ApprovalTemplatesPage,
+  ApprovalDesign: ApprovalDesignPage,
+
+}
 
 export const paths = [
   { path: "/index", title: "首页", component: "Index" },
@@ -90,5 +112,73 @@ export const paths = [
     title: "字典表单",
     component: "ValueSpace",
   },
- 
-];
+  //
+  {
+    path: "/approvals/all",
+    exact: true,
+    title: "审批管理",
+    component: "Approvals",
+  },
+  {
+    path: "/approvals",
+    exact: true,
+    title: "审批管理",
+    component: "Approvals",
+  },
+  {
+    path: "/approvals/:name/:id/edit",
+    exact: true,
+    title: "编辑审批",
+    component: "ApprovalEdit",
+  },
+  {
+    path: "/approvals/:id/info",
+    exact: true,
+    title: "流转审批",
+    component: "ApprovalInfo",
+  },
+  {
+    path: "/approvals/wait",
+    exact: true,
+    title: "我的待办",
+    component: "ApprovalsWait",
+  },
+  {
+    path: "/approvals/templates",
+    exact: true,
+    title: "流程设计列表",
+    component: "ApprovalsTemplates",
+  },
+  {
+    path: "/approvals/templates/:templateName/design",
+    exact: true,
+    title: "流程设计",
+    component: "ApprovalDesign",
+  },
+  {
+    path: "/approvals/dispose",
+    exact: true,
+    title: "我的已办",
+    component: "ApprovalsDispose",
+  },
+  {
+    path: "/approvals/send",
+    exact: true,
+    title: "抄送我",
+    component: "ApprovalsSend",
+  },
+  {
+    path: "/approvals/admin",
+    exact: true,
+    title: "全部审批",
+    component: "ApprovalsAdmin",
+  },
+  {
+    path: "/approvals/verify",
+    exact: true,
+    title: "校稿",
+    component: "ApprovalVerify",
+  },
+
+
+]
