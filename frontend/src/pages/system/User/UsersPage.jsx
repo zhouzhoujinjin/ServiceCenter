@@ -40,13 +40,7 @@ export const UsersPage = () => {
       title: "姓名",
       dataIndex: "fullName",
       width: "15%",
-    },
-    {
-      key: "email",
-      title: "邮箱",
-      dataIndex: "email",
-      width: "15%",
-    },
+    },    
     {
       key: "mobile",
       title: "手机号",

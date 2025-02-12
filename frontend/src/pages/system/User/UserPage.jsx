@@ -1,38 +1,38 @@
-import React, { useState, useEffect } from "react";
-import { Form, Input, Button, Upload } from "antd";
-import { ImgCrop, PageWrapper } from "~/components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useParams, useHistory } from "react-router-dom";
-import { AddUser, GetUser, UpdateUser } from "./services/user";
-import { IsExistUser, GetPinYin } from "~/services/utils";
-import { token } from "~/utils/token";
-import { useTabLayout } from "~/hooks/useTabLayout";
+import React, { useState, useEffect } from "react"
+import { Form, Input, Button, Upload } from "antd"
+import { ImgCrop, PageWrapper } from "~/components"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { useParams, useHistory } from "react-router-dom"
+import { AddUser, GetUser, UpdateUser } from "./services/user"
+import { IsExistUser, GetPinYin } from "~/services/utils"
+import { token } from "~/utils/token"
+import { useTabLayout } from "~/hooks/useTabLayout"
 import {
   formItemLayout,
   formItemLayoutWithoutLabel,
-} from "~/utils/formLayouts";
-import { useDocumentTitle } from "~/hooks/useDocumentTitle";
+} from "~/utils/formLayouts"
+import { useDocumentTitle } from "~/hooks/useDocumentTitle"
 
 export const UserPage = (props) => {
-  const params = useParams();
-  const [userId] = useState(params.id);
-  const [form] = Form.useForm();
-  const [imageUrl, setImageUrl] = useState(null);
-  const history =  useHistory();
-  const [lock, setLock] = useState(false);
-  const { refreshTab, replaceTab } = useTabLayout();
-  const { setFieldsValue } = form;
+  const params = useParams()
+  const [userId] = useState(params.id)
+  const [form] = Form.useForm()
+  const [imageUrl, setImageUrl] = useState(null)
+  const history = useHistory()
+  const [lock, setLock] = useState(false)
+  const { refreshTab, replaceTab } = useTabLayout()
+  const { setFieldsValue } = form
 
   useDocumentTitle(
     `/users/${userId}`,
     userId === "create"
       ? "添加用户"
       : `编辑 ${form.getFieldValue("userName") || ""}`
-  );
+  )
 
   const validateMessages = {
     required: "必填要素",
-  };
+  }
 
   useEffect(() => {
     if (userId !== "create") {
@@ -40,53 +40,54 @@ export const UserPage = (props) => {
         const {
           userName,
           profiles: { Surname, GivenName, Pinyin, avatar },
-        } = data;
-        setFieldsValue({ userName, Surname, GivenName, Pinyin });
-        setImageUrl(avatar);
-        setLock(true);
-      });
+        } = data
+        setFieldsValue({ userName, Surname, GivenName, Pinyin })
+        setImageUrl(avatar)
+        setLock(true)
+      })
     }
-  }, [userId, setFieldsValue]);
+  }, [userId, setFieldsValue])
 
   const onFinish = (values) => {
-    const { userName, ...profiles } = values;
-    profiles.avatar = imageUrl;
-    profiles.fullName = `${profiles.surname}${profiles.givenName}`;
+
+    const { userName, ...profiles } = values
+    profiles.avatar = imageUrl
+    profiles.fullName = `${profiles.Surname}${profiles.GivenName}`    
     let formData = {
       userName,
       profiles,
-    };
+    }
     if (params.id === "create") {
       AddUser(formData, (data) => {
-        history.push(`/users/${data.userName}`);
+        history.push(`/users/${data.userName}`)
         replaceTab({
           oldKey: "/users/create",
           newKey: `/users/${data.userName}`,
           title: data.profiles.fullName,
-        });
-      });
+        })
+      })
     } else {
-      UpdateUser(formData, (data) => {});
+      UpdateUser(formData, (data) => { })
     }
-    refreshTab("/users");
-  };
+    refreshTab("/users")
+  }
 
   const onPinYinChange = (e) => {
-    e.preventDefault();
-    var fullName = form.getFieldValue("surname") + e.target.value;
+    e.preventDefault()
+    var fullName = form.getFieldValue("Surname") + e.target.value
     GetPinYin(fullName, (data) => {
       form.setFieldsValue({
-        pinyin: data,
-      });
-    });
-  };
+        Pinyin: data,
+      })
+    })
+  }
 
   const uploadButton = (
     <div>
       {<FontAwesomeIcon icon="lock-alt" />}
       <div className="ant-upload-text">上传头像</div>
     </div>
-  );
+  )
 
   const onAvatarChange = (file) => {
     if (file.file.response) {
@@ -95,12 +96,12 @@ export const UserPage = (props) => {
           status,
           response: { data },
         },
-      } = file;
+      } = file
       if (status === "done" && data) {
-        setImageUrl(data);
+        setImageUrl(data)
       }
     }
-  };
+  }
 
   return (
     <PageWrapper
@@ -124,15 +125,15 @@ export const UserPage = (props) => {
               validator(rule, value, cb) {
                 return new Promise((resolve, reject) => {
                   if (!value) {
-                    reject("必填要素");
+                    reject("必填要素")
                   } else {
                     userId === "create"
                       ? IsExistUser(value, (data) =>
-                          data ? reject("已存在同名用户") : resolve()
-                        )
-                      : resolve();
+                        data ? reject("已存在同名用户") : resolve()
+                      )
+                      : resolve()
                   }
-                });
+                })
               },
             }),
           ]}
@@ -187,5 +188,5 @@ export const UserPage = (props) => {
         </Form.Item>
       </Form>
     </PageWrapper>
-  );
-};
+  )
+}
