@@ -21,10 +21,10 @@ const ApprovalDesignPage = (props) => {
   }, [templateName])
 
   const handleSave = () => {
-    console.log(workFlowData)
+    // console.log(workFlowData)
     if (template) {
       UpdateTemplate(templateName, { startNode: workFlowData }, (data) => {
-        console.log(data)
+        // console.log(data)
       })
     }
   }
