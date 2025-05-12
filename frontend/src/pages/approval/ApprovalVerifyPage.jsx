@@ -13,7 +13,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import dayjs from 'dayjs'
 import { token } from '../../utils/token'
 import { dotKeyToNested } from '../../utils/utils'
-import UserPicker from '../Approval/components/UserPicker/index'
+// import UserPicker from '../Approval/components/UserPicker/index'
+import UserPicker from '../approval/components/UserPicker'
 
 let uploadIndex = 0
 //#region 上传图片

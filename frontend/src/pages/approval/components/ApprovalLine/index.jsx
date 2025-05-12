@@ -156,7 +156,9 @@ const ApprovalLine = ({ approvalItem, mentionUsers, onSave }) => {
   }, [approvalItem.nodes]);
 
   useEffect(() => {
+    console.log('inDept')
     GetDeptUsers((data) => {
+      
       setDeptUsers(data);
     });
     GetTransUsers(approvalItem.id, (data) => {
@@ -165,7 +167,7 @@ const ApprovalLine = ({ approvalItem, mentionUsers, onSave }) => {
     IsLastApproval(approvalItem.id, (data) => {
       setIsLastApproval(data);
     });
-  }, [approvalItem.id]);
+  }, []);
 
   useEffect(() => {
     if (originalList.length === 0) {

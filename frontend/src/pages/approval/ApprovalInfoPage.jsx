@@ -39,11 +39,14 @@ const ApprovalInfoPage = () => {
 
   useEffect(() => {
     if (itemId) {
+      console.log(itemId)
       GetApprovalItem(itemId, (data) => {
         if (data.content) {
+          console.log(data)
           const formFieldValues = dotKeyToNested(data.content);
           setItem(data);
           setFields(data.template.fields); //结构
+          console.log(formFieldValues)
           setContent(formFieldValues); //数据
           setTemplate(data.template);
         }

@@ -184,12 +184,12 @@ namespace SCenter.Controllers
         }
         //
         var deptUsers = new List<DepartmentUserSelect>();
-        var depts = departmentUsers.OrderBy(x => x.Profiles["departmentId"])
+        var depts = departmentUsers
           .Select(x => new
           {
-            Id = int.Parse(x.Profiles["departmentId"].ToString()),
-            Name = x.Profiles["departmentName"].ToString()
-          }).Distinct().ToList();
+            Id =x.Profiles.ContainsKey("departmentId")?int.Parse(x.Profiles["departmentId"].ToString()):0,
+            Name = x.Profiles["departmentName"]!.ToString()
+          }).Distinct().ToList().OrderBy(x=>x.Id);
         foreach (var dept in depts)
         {
           var tree = new DepartmentUserSelect
